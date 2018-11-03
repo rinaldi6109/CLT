@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<body>
+	<div id="containerTCL">
+		<div id="cp"  class="containerTCL">
+			<span id="cp1">
+				<label class="text left-text">percentage</label>&nbsp;<label class="text percentage">50%</label>&nbsp;&nbsp;
+				<label class="left">&minus;</label><label class="right">+</label>
+			</span>
+			<span id="cp2">
+				<label class="text left-text">slow&nbsp;</label> 
+				<label class="left pick slow">&nbsp;</label
+					><label class="center pick medium selected">&nbsp;</label
+				><label class="right pick fast">&nbsp;</label>
+				<label class="text right-text">&nbsp;fast</label> 
+			</span>	
+			<span id="cp3">
+				<label class="left right start">start</label>
+				<label class="left right pause">pause</label>
+				<label class="left right reset">reset</label>
+			</span>	
+			<span id="cp4">
+				<label class="text left-text">animation</label>&nbsp;
+				<label class="left bycol selected">by column</label
+					><label class="center matrix">matrix style</label
+				><label class="right byrow">by row</label>
+			</span>
+			<span id="cp5">
+				<label class="text left-text">remaining time:</label>&nbsp;
+				<label class="text left-text minutes">...</label>
+			</span>
+		</div>
+	</div>	
+	<svg id="wa"></svg>
+</body>
+<script src="d3.v4.min.js"></script>
+<script src="d3-svg.js"></script>
