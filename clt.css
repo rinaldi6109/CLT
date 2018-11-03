@@ -1,0 +1,82 @@
+	body {
+	font-variant: small-caps;
+	font-family:Calibri,Verdana,Sans Serif;
+	}
+	
+	containerTCL, #containerTCL2, .containerTCL {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width:100%;
+	margin:auto;
+	text-align:center;
+	padding:5px 0;
+	}
+	
+	.containerTCL label {
+	text-align:center;
+	display:inline-block;
+	min-width:1.5em;
+	}
+	.containerTCL label.left:hover:not(.selected), .containerTCL label.center:hover:not(.selected), .containerTCL label.right:hover:not(.selected) {
+	background-color:#c0c030 !important
+	}
+	.containerTCL #cp2 label.left, .containerTCL #cp2 label.center, .containerTCL #cp2 label.right {max-height:0.75em;vertical-align:middle}
+	.containerTCL label.selected {
+	background-color:#70c030 !important
+	}
+	.containerTCL label.left {
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	background-color:#dddddd;
+	border:1px solid grey;
+	padding:0px;
+	}
+	.containerTCL label.center {
+	background-color:#dddddd;
+	border-top:1px solid grey;
+	border-bottom:1px solid grey;
+	border-right:1px solid grey;
+	padding:0px;
+	}
+	.containerTCL label.right {
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	background-color:#dddddd;
+	border-top:1px solid grey;
+	border-bottom:1px solid grey;
+	border-right:1px solid grey;
+	padding:0px;
+	}
+	.containerTCL label.disabled {opacity:0.3;}
+	
+	#containerTCL {position:relative}
+	#cp span {display:inline-block;float:left;width:auto;padding:0 1em;}
+	#cp1 label.percentage {min-width:2em;}
+	#cp3 label {min-width:4em;}
+	#cp4 label:not(.text) {min-width:6em;}
+	
+	#wa g.column rect {fill:#ccddcc;}
+	#wa g.column rect.active {fill:#4444cc;}
+	#wa g.row.gone rect.active {fill:#888888;}
+	#wa g.active rect.active {fill:#0000cc;}
+	
+	path {
+	fill: none;
+	stroke: #999;
+	}
+	circle {
+	fill: none;
+	stroke: #aaa;
+	}
+	
+	rect.redblock,rect.rednorm  {
+	fill: #a00020;
+	}
+	
+	#rectnorm rect {
+	fill: rgb(128,0,0);
+	}
