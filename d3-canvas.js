@@ -53,7 +53,7 @@ const alpha1=0.45,alpha2=0.1;
 
 var debug=true; // modalità debug
 debug && console.log(lato);
-if (lato<4) { // avvisa che l'area di lavoro è troppo piccola per procedere standard
+if (lato<4) { // avvisa che l'area di lavoro è troppo piccola per procedere 
 	d3.select("body").append("h1")
 	.style("text-align","center")
 	.html("aborted: screen too narrow, sorry<br>if you are on a smartphone, try to rotate it and reload the page");
