@@ -56,7 +56,7 @@ debug && console.log(lato);
 if (lato<4) { // avvisa che l'area di lavoro è troppo piccola per procedere standard
 	d3.select("body").append("h1")
 	.style("text-align","center")
-	.text("aborted: screen too narrow, sorry");
+	.html("aborted: screen too narrow, sorry<br>if you are on a smartphone, try to rotate it and reload the page");
 	throw '';
 } 
 
