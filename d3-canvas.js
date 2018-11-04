@@ -114,7 +114,7 @@ var shift=false; // flag per scorrimento laterale/verticale
 var start,end; // valori per scorrimento
 
 function updateTime() { // restituisce il tempo stimato per terminare l'animazione da stampare a video
-	var ftr=((tipo==0) ? 2 : (tipo==1) ? 14 : 7)*squares.filter(function(s,i){return s.state<fallingVsBaseline}).length/ncols/nrows;
+	var ftr=((tipo==0) ? 2 : (tipo==1) ? 25/2 : 5/2)*squares.filter(function(s,i){return s.state<fallingVsBaseline}).length/ncols/nrows;
 	ftr=Math.round(ftr*speed2/speed1);
 	return "approximately " + ((ftr<1) ? "<1" : ftr) + " minute" + ((ftr>1) ? "s" : "")
 }
