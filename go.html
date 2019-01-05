@@ -500,6 +500,7 @@
 	
 	function clickOnTarget() {
 		target.on("click",null);
+		alert("!");
 		var posC=getTranslation(targetC.attr("transform"));
 		var theta=getTranslation(d3.select(this).attr("transform")).rotate;
 		var x=d3.event.pageX-posC.translateX-svg.node().getBoundingClientRect().x-document.documentElement.scrollLeft;
