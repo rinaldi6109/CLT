@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link id="Sigmar+One" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Sigmar+One" media="all">
+<body>
+	<div id="container">
+		<!--  		<div class="info"><p>time: <span id="time">...</span></p><p>score: <span id="score">...</span></p></div> -->
+		
+		<svg></svg>
+	</div>
+</body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="target.js"></script>
+<style>
+	
+	body {
+	margin:0;
+	padding:0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	background-color:#ecd4a9;
+	a0e0ff
+	}
+	
+	#container {
+	padding:10px;
+	margin:auto
+	}
+	
+	.legend text {
+	alignment-baseline:hanging;
+	font-family:'Sigmar One';
+	afont-size:40px;
+	font-weight:900;
+	fill:#0070b0;
+	}
+	
+	.go {
+	fill:#0070b0;
+	cursor: pointer;
+	}
+	
+	.go rect {
+	fill:#e8e8e8
+	}
+	
+	.go text {
+	font-family:'Sigmar One';
+	alignment-baseline:central;
+	text-anchor:middle;
+	afont-size:40px;	
+	text-align:center;
+	}
+	
+	svg {
+	margin:auto;
+	aclear:both; 
+	afloat:left;border: 1px solid #c0c0c0;
+	border-radius: 5px;
+	background: #ffffff;
+	cursor:auto}
+	
+	svg > rect {
+	fill: #ffffff;
+	background: #ffffff;
+	}
+	
+	.target1 {fill:#f8f8f8}
+	.target0 {fill:#e0e0e0}
+	.target2 {fill:#b8b8b8}
+	.target3 {fill:#a0a0a0}
+	
+	.target0 {fill:#c8c8c8}
+	.target1 {fill:#f8f8f8}
+	.target2 {fill:#c8c8c8}
+	.target3 {fill:#f8f8f8}
+	.target4 {fill:#c8c8c8}
+	
+	.cursorOn {cursor: crosshair !important}
+	.cursorOff {cursor: no-drop}
+	
+	#nSample path {
+	fill: none;
+	stroke: #000;
+	stroke-width: 3px;
+	}
+	
+	//	.center {fill:#a0a0a0}
+	
+	.shot1 {fill:#4040ff}
+	
+	circle.normal {fill:#00b070}
+</style>
+
