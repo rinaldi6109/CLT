@@ -5,13 +5,13 @@
 	
 	const FADEIN=100,
 	FADEOUT=100,
-	ACTIVE=500,
+	ACTIVE=800,
 	FDELAY=300
 	
 	const  
 	radius=120,
 	time=60,
-	shots=40,
+	shots=35,
 	between=(1000*time/shots-FADEIN-ACTIVE-FADEOUT-FDELAY)*2
 	if (between<=0) {alert("impossible settings");throw '';}
 	
