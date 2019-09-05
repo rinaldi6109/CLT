@@ -5,13 +5,13 @@
 	
 	const FADEIN=100,
 	FADEOUT=100,
-	ACTIVE=500,
+	ACTIVE=800,
 	FDELAY=300
 	
 	const  
 	radius=120,
 	time=60,
-	shots=40,
+	shots=35,
 	between=(1000*time/shots-FADEIN-ACTIVE-FADEOUT-FDELAY)*2
 	if (between<=0) {alert("impossible settings");throw '';}
 	
@@ -263,8 +263,7 @@
 		
 		t = d3.timer(function(elapsed) {
 			svg.classed("cursorOff",true)
-			elapsed2=ct*1000+between*delay.filter((d,i) => (i<ct)).reduce((total, d) => total + d,0)+d3.now()-tm;
-			if (ct<shots) {
+			var elapsed2=ct*(FADEIN+ACTIVE+FADEOUT+FDELAY)+between*delay.filter((d,i) => (i<ct)).reduce((total, d) => total +			if (ct<shots) {
 				console.log(Math.round(elapsed2))
 				updateTime(elapsed2);
 			}
