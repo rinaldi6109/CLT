@@ -5,7 +5,7 @@
 	
 	const FADEIN=100,
 	FADEOUT=100,
-	ACTIVE=800,
+	ACTIVE=500,
 	FDELAY=300
 	
 	const  
