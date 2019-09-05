@@ -590,8 +590,8 @@
 			if (!allowClick) return
 			target.classed("cursorOn",true);
 			target.classed("cursorOff",false);
-			
 			target.on("click",clickOnTarget)
+			target.on("touchstart",clickOnTarget)
 		})
 		.duration(FADEIN)
 		.attr("opacity",1)
@@ -610,6 +610,7 @@
 			target.classed("cursorOn",false)
 			target.classed("cursorOff",true)
 			target.on("click",null)
+			target.on("touchstart",null)
 			ct++;
 			if (ct==shots) {
 				svg.classed("cursorOff",false)
@@ -706,6 +707,7 @@
 		target.classed("cursorOn", false)
 		target.classed("cursorOff", true)
 		target.on("click",null);
+		target.on("touchstart",null);
 		var posC=getTranslation(targetC.attr("transform"));
 		var theta=getTranslation(target.attr("transform")).rotate;
 		var x=d3.event.pageX-posC.translateX-svg.node().getBoundingClientRect().x-document.documentElement.scrollLeft;
