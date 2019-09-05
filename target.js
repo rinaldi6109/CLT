@@ -78,7 +78,7 @@
 		width=Math.min(width,height-legendSize);
 		height=width+legendSize;
 		
-		alert(width,radius)
+		alert(width+":"+radius)
 		var ok=(width/radius<6) ? false : true 
 		
 		d3.select("#container").style("width",width+"px");
