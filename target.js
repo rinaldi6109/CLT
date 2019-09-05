@@ -124,7 +124,7 @@
 			.attr("id",function(d){return d.id})
 			.text(function(d){return d.text})
 			.attr("text-anchor",function(d){return d.tanchor})
-			//		.attr("alignment-baseline","hanging")
+					.attr("alignment-baseline","hanging")
 			//		.attr("font-family", "Sigmar One")
 			.attr("font-size", legendSize+"px")
 			//		.attr("font-weight", "900")
@@ -138,7 +138,7 @@
 			.attr("id","dTargetC")
 			.attr("opacity",0)
 			;
-			
+	
 			target=targetC.append("g")
 			.attr("transform","rotate(0)")
 			.attr("id","dTarget")
