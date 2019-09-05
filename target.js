@@ -591,7 +591,7 @@
 			target.classed("cursorOn",true);
 			target.classed("cursorOff",false);
 			target.on("click",clickOnTarget)
-			target.on("touchstart",clickOnTarget)
+			target.on("touchstart",function(ev){updateScore(1);clickOnTarget(ev)})
 		})
 		.duration(FADEIN)
 		.attr("opacity",1)
