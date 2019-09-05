@@ -590,7 +590,7 @@
 			if (!allowClick) return
 			target.classed("cursorOn",true);
 			target.classed("cursorOff",false);
-//			target.on("click",clickOnTarget)
+			target.on("click",clickOnTarget)
 			target.on("touchstart",clickOnTarget)
 		})
 		.duration(FADEIN)
@@ -609,7 +609,7 @@
 			console.log((ct)+":"+Math.round(d3.now()-tm)+":"+Math.round(between*delay[ct]))
 			target.classed("cursorOn",false)
 			target.classed("cursorOff",true)
-//			target.on("click",null)
+			target.on("click",null)
 			target.on("touchstart",null)
 			ct++;
 			if (ct==shots) {
@@ -706,7 +706,7 @@
 		
 		target.classed("cursorOn", false)
 		target.classed("cursorOff", true)
-//		target.on("click",null);
+		target.on("click",null);
 		target.on("touchstart",null);
 		var posC=getTranslation(targetC.attr("transform"));
 		var theta=getTranslation(target.attr("transform")).rotate;
