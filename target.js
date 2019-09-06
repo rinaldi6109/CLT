@@ -263,7 +263,8 @@
 		
 		t = d3.timer(function(elapsed) {
 			svg.classed("cursorOff",true)
-			var elapsed2=ct*(FADEIN+ACTIVE+FADEOUT+FDELAY)+between*delay.filter((d,i) => (i<ct)).reduce((total, d) => total +			if (ct<shots) {
+			var elapsed2=ct*(FADEIN+ACTIVE+FADEOUT+FDELAY)+between*delay.filter((d,i) => (i<ct)).reduce((total, d) => total + d,0)+d3.now()-tm
+			if (ct<shots) {
 				console.log(Math.round(elapsed2))
 				updateTime(elapsed2);
 			}
