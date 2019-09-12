@@ -10,8 +10,8 @@ FDELAY=300
 
 const  
 radius=120,
-time=10,
-shots=5,
+time=60,
+shots=40,
 between=(1000*time/shots-FADEIN-ACTIVE-FADEOUT-FDELAY)*2
 if (between<=0) {alert("impossible settings");throw '';}
 
